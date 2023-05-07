@@ -1,5 +1,3 @@
-# onetwotext
-Simple text counter that save your life.
 
 onetwotext
 =============================
