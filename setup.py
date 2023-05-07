@@ -24,7 +24,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='onetwotext',
-    version='0.1.0',
+    version='1.0.0',
     description='A python library that expose web-app to count text words',
     long_description=readme + '\n\n' + doclink + '\n\n' + history,
     author='Riccardo De Vecchis',
