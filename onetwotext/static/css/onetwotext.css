@@ -1,0 +1,158 @@
+body {
+    background: #141414;
+    overflow: scroll;
+  }
+
+
+header {
+    height: 15vh;
+    background: #141414;
+    overflow: hidden;
+    margin-bottom: 2cm;
+  }
+  [class*=underlay] {
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  .underlay-photo {
+    animation: hue-rotate 6s infinite;
+    background: url(falls_letters.jpg);
+    background-size: cover;
+    z-index: -1;
+  }
+  .underlay-black {
+    background: rgba(0,0,0,0.7);
+    z-index: -1;
+  }
+  
+.title {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    margin-bottom: 0cm;
+    letter-spacing: 6px;
+    font-size: 60px;
+    line-height: 20px;
+    font-weight: lighter;
+    font-family: 'Neology';
+  }
+
+  .text-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+.button {
+    margin-top: 2cm;
+  }
+
+textarea {
+    width: 20cm;
+    height: 7cm;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+    word-wrap: break-word;
+    overflow: auto;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+  }
+
+.loading::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@font-face {
+    font-family: 'Neology';
+    src: url(Neology.ttf) format('truetype'); /* Sostituisci "path/to/your/font-file.ttf" con il percorso corretto del tuo file del font Nimbus Sans L Pro Regular */
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2cm;
+  }
+  
+  .button-container button {
+    width: 4cm;
+    height: 2cm;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+  }
+  #response-container {
+    color: white;
+    font-size: 4cm;
+    margin-top: 2cm;
+    text-align: center;
+    transition: font-size 2s ease-in-out;
+  }
+
+  .button-container button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #charts-container {
+    margin-top: 3cm;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #count-container {
+    margin-right: 20px;
+  }
+
+  #histogram-container, #pie-chart-container {
+    width: 45%;
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+  }
+
+  .page-footer {
+    background-color: black;
+    font-family: 'Neology';
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .page-footer p {
+    margin-top: 35px;
+    font-size: 20px;
+  }

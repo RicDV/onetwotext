@@ -1,0 +1,10 @@
+[ott_data]
+    [ott_data.default_user]
+        username = "voxy"
+        password = "gAAAAABkValee0R3VgMrVBxUCmMinveViU9fKRE2IuEFOJdmcHbnCw3RYPdVHpUn7mVCrBgAP4_wIGKo0tms0z29u2t9kPph9g=="
+    [ott_data.links]
+        authority = "chatbot.theb.ai"
+        origin    = "https://chatbot.theb.ai"
+        api       = "https://chatbot.theb.ai/api/chat-process"
+    [ott_data.paths]
+        db_rel_path = "OnetwotextDb/onetwotextdb.db"

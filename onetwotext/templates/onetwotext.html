@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/onetwotext.css') }}" />
+    <meta charset="UTF-8" />
+    <style>
+      #response-container {
+        font-size: 4cm;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <canvas id="c"></canvas>
+    </header>
+    <main>
+      <div class="title">WORD COUNTER</div>
+      <form id="text-form" class="text-form">
+        <textarea name="text-input" id="text-input" required class="text-input"></textarea>
+        <div class="button-container">
+          <button type="submit" id="submit-button" name="submit-button" value="submit">Count</button>
+          <button type="submit" id="ai-button" name="ai-button" value="ask-ai" class="ask-ai-button">Ask the AI</button>
+        </div>
+      </form>
+      <div id="response-container" class="number-counter"></div>
+      <div id="charts-container">
+        <div id="count-container"></div>
+        <div id="histogram-container"></div>
+        <div id="pie-chart-container"></div>
+      </div>
+    </main>
+    <div class="underlay-photo"></div>
+    <div class="underlay-black"></div>
+    <footer class="page-footer" id="footer">
+        <div class="container">
+          <p>Powered by Riccardo De Vecchis</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/onetwotext.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% if css=="crash" %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ott_login2.css') }}" />
+    {% else %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ott_login.css') }}" />
+    {% endif %}
+</head>
+<body>
+    <form class="login-form" method="POST" action="/access_control">
+        <h1 style="color: #f9f9f9"> </h1>
+        <div class="title">
+            <span>ONETWOTEXT</span>
+            <p style="font-size:18px">SIMPLE PYTHONIC WORD COUNTER</p>
+        </div>
+        <p class="login-text">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-lock fa-stack-1x"></i>
+            </span>
+        </p>
+        <input type="username" class="login-username" autofocus="true" required="true" placeholder="User" name="username" />
+        <input type="password" class="login-password" required="true" placeholder="Password"  name="password"/>
+        <input type="submit" name="Login" value="Login" class="login-submit" />
+        <p class="response" style="color: #ff0000" ;>{{res}}</p>
+    </form>
+    <div class="underlay-photo"></div>
+    <div class="underlay-black"></div>
+</body>
+</html>
